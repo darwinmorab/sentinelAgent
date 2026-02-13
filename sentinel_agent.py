@@ -76,7 +76,7 @@ class SentinelAgent:
                     import yaml
                     return yaml.safe_load(f)
                 else:
-                    self.logger.warning(f"Unknown config format, using defaults")
+                    logging.warning(f"Unknown config format, using defaults")
                     return self._default_config()
         except Exception as e:
             logging.error(f"Error loading config: {e}, using defaults")
