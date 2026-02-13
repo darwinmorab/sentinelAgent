@@ -1,0 +1,12 @@
+{
+  "monitoring_interval": 60,
+  "alert_thresholds": {
+    "cpu_percent": 80.0,
+    "memory_percent": 85.0,
+    "disk_percent": 90.0,
+    "response_time_ms": 1000.0
+  },
+  "pos_endpoint": "http://localhost:8080/health",
+  "log_level": "INFO",
+  "metrics_retention": 1000
+}
